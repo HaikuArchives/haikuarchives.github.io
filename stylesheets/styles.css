@@ -788,6 +788,11 @@ header p {
   top: 7px;
   display: block;
   background: url(../images/octocat-logo.png);
+  opacity: .25;
+  transition: opacity .5s;
+}
+#banner #logo:hover {
+  opacity: 1;
 }
 
 section {
@@ -934,13 +939,6 @@ footer {
 
   #banner {
     top: 80px;
-  }
-  #banner .fork {
-    float: left;
-    display: inline-block;
-    margin-left: 0px;
-    position: fixed;
-    left: 20px;
   }
 
   section {
