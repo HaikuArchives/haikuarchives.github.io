@@ -761,7 +761,6 @@ header p {
 }
 #banner .downloads {
   float: right;
-  margin: 0 45px 0 0;
 }
 #banner .downloads span {
   float: left;
@@ -873,6 +872,8 @@ footer {
 }
 
 @media print, screen and (max-width: 1060px) {
+  .mobile-hidden { display: none; }
+  #banner .downloads { float: none; }
   div.wrapper {
     width: auto;
     margin: 0;
@@ -921,6 +922,8 @@ footer {
   }
 }
 @media print, screen and (max-width: 720px) {
+  .mobile-hidden { display: none; }
+  #banner .downloads { float: none; }
   body {
     word-wrap: break-word;
   }
@@ -956,6 +959,8 @@ footer {
   }
 }
 @media print, screen and (max-width: 480px) {
+  .mobile-hidden { display: none; }
+  #banner .downloads { float: none; }
   header {
     position: relative;
     padding: 5px 0px;
