@@ -618,6 +618,18 @@ pre code {
   padding: 0px;
 }
 
+table.sortable thead {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+table.sortable thead td {
+  background-color: #e0e0e0;
+}
+table.sortable thead td:hover {
+  background-color: #f0f0f0;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;

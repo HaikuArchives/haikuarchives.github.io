@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="javascripts/sorttable.js"></script>
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
   </head>
-  <body>
+  <body onload="sorttable.innerSortFunction.apply(document.querySelector('thead td'), []);">
 
       <header>
         <h1>Haiku Software Archives</h1>
@@ -34,22 +34,93 @@
       <section>
       
 <h2>
-<h2><a name="soft-src" class="anchor" href="#soft-src"><span class="octicon octicon-link"></span></a>Software Sources</h2>
+<h2><a name="soft-src" class="anchor" href="#soft-src"><span class="octicon octicon-link"></span></a>Software</h2>
 <br />
 
+<table class="sortable">
+<thead><tr>
+  <td>Name</td>
+  <td>Category</td>
+  <td>License</td>
+  <td>Author</td>
+  <td>Source</td>
+</tr></thead>
+
+<tr>
+  <td><a href="https://github.com/HaikuArchives/AESAddOn">AES Add-On</a></td>
+  <td>Add-Ons</td>
+  <td>MIT</td>
+  <td>Jason</td>
+  <td>OsDrawer</td>
+</tr>
+<tr>
+  <td><a href="https://github.com/HaikuArchives/ArmyKnife">ArmyKnife</a></td>
+  <td>Apps</td>
+  <td>JBQ</td>
+  <td>Jean-Baptiste M.</td>
+  <td>OsDrawer</td>
+</tr>
+<tr>
+  <td><a href="https://github.com/HaikuArchives/ArtPaint">ArtPaint</a></td>
+  <td>Apps</td>
+  <td>MIT</td>
+  <td>Heikki Suhonen</td>
+  <td>OsDrawer</td>
+</tr>
+<tr>
+  <td><a href="https://github.com/HaikuArchives/BeAE">BeAE</a></td>
+  <td>Apps</td>
+  <td>MIT (mod.)</td>
+  <td>Frans van Nispen</td>
+  <td>OsDrawer</td>
+</tr>
+<tr>
+  <td><a href="https://github.com/HaikuArchives/BeCheckers">BeCheckers</a></td>
+  <td>Apps</td>
+  <td>MIT</td>
+  <td>Jeremy Gibbons</td>
+  <td>OsDrawer</td>
+</tr>
+<tr>
+  <td><a href="https://github.com/HaikuArchives/BeFAR">BeFAR</a></td>
+  <td>Apps</td>
+  <td>Public domain</td>
+  <td>Baza &amp; Nexus</td>
+  <td>OsDrawer</td>
+</tr>
+<tr>
+  <td><a href="https://github.com/HaikuArchives/BeGet">BeGet</a></td>
+  <td>Apps</td>
+  <td>GPL v2</td>
+  <td>Atsushi Takamatsu</td>
+  <td>OsDrawer</td>
+</tr>
+<tr>
+  <td><a href="https://github.com/HaikuArchives/BeInYourStereo">Be In Your Stereo</a></td>
+  <td>Add-Ons</td>
+  <td>BSD 3-c. (mod.)</td>
+  <td>Stephen van Egmond</td>
+  <td>OsDrawer</td>
+</tr>
+<tr>
+  <td><a href="https://github.com/HaikuArchives/BeShare">BeShare</a></td>
+  <td>Apps</td>
+  <td>Public domain</td>
+  <td>(various)</td>
+  <td>OsDrawer</td>
+</tr>
+<tr>
+  <td><a href="https://github.com/HaikuArchives/BeTeX">BeTeX</a></td>
+  <td>Apps</td>
+  <td>MIT</td>
+  <td>Tim de Jong</td>
+  <td>OsDrawer</td>
+</tr>
+</table>
+
+The following have not been put in the table yet and are as such "uncategorized": <br>
 <h3></a>OsDrawer</h3> (<a href="http://dev.osdrawer.net">http://dev.osdrawer.net</a>)
 <ul>
-<li><a href="https://github.com/HaikuArchives/AESAddOn">AESAddOn</a></li>
-<li><a href="https://github.com/HaikuArchives/ArmyKnife">ArmyKnife</a></li>
-<li><a href="https://github.com/HaikuArchives/ArtPaint">ArtPaint</a></li>
-<li><a href="https://github.com/HaikuArchives/BeAE">BeAE</a></li>
-<li><a href="https://github.com/HaikuArchives/BeCheckers">BeCheckers</a></li>
-<li><a href="https://github.com/HaikuArchives/BeFAR">BeFAR</a></li>
-<li><a href="https://github.com/HaikuArchives/BeGet">BeGet</a></li>
-<li><a href="https://github.com/HaikuArchives/BeHappy">BeHappy</a></li>
-<li><a href="https://github.com/HaikuArchives/BeInYourStereo">BeInYourStereo</a></li>
-<li><a href="https://github.com/HaikuArchives/BeShare">BeShare</a></li>
-<li><a href="https://github.com/HaikuArchives/BeTeX">BeTeX</a></li>
 <li><a href="https://github.com/HaikuArchives/Bme">Bme</a></li>
 <li><a href="https://github.com/HaikuArchives/BurnItNow">BurnItNow</a></li>
 <li><a href="https://github.com/HaikuArchives/ClipUp">ClipUp</a></li>
