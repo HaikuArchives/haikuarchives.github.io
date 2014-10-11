@@ -37,15 +37,15 @@
           <li>Import source code of repository.
             <ul style="margin: 0;"><li><b>If importing from a SCM repo:</b>
               <ul style="margin: 0;">
-                <li>For SVN: <code>git svn clone</code> to clone the repo.</li>
-                <li>For HG: <code>hg clone</code> to clone the repo, <a href="http://hg-git.github.io/">hg-git</a> to push it to GitHub.</li>
+                <li>Subversion/Mercurial: <a href="https://porter.github.com/new">use the GitHub Importer</a>. (See step 2 for the repo naming convention).</li>
+                <li>CVS: for single-module repos, use <code>git cvsimport</code>. For multi-module repos, use <code>cvs2git</code>.</li>
               </ul>
             </li>
             <li><b>If importing from a zip/tar/etc.:</b>
               <ol style="margin: 0;">
                 <li>Extract archive. Delete <b>ALL</b> compiled files.</li>
                 <li>Move all source files into a "src" directory if they aren't already. Leave README/TODO/LICENSE/etc. in top directory.</li>
-                <li>Move HTML docs, if any, to their own subfolder of the parent directory.</li>
+                <li>Move documentation files, if any, to their own subfolder of the parent directory.</li>
               </ol>
             </li></ul>
           </li>
@@ -53,16 +53,18 @@
             <ul style="margin: 0;"><li><b>Naming convention:</b> Remove spaces &amp; separators; change captialization. (e.g. "Haiku on a Stick" &rarr; "HaikuOnAStick", "Open Sum-IT" &rarr; "OpenSumIt")</li></ul>
           </li>
           <li>Push code to GitHub.</li>
-          <li>Create the description for the repo (&amp; add url if there is one). The summary probably can be extracted from the first sentence of the README. (Look at some repos on HaikuArchives for examples.)</li>
+          <li>Create the description for the repo. The summary probably can be extracted from the first sentence of the README. (Look at some already-uploaded repos for examples.)</li>
+          <li>Add the URL you got the software from to the README, if you got it from a website (e.g. "Original URL: http://...").</li>
           <li>Disable the Wiki. (We can re-enable it later if we ever want it, and we aren't going to use it now.)</li>
+          <li>Add the software to the "Software" page of this site.</li>
         </ol>
-      
+
       </section>
       <footer>
         <p><small>Hosted on GitHub Pages<br/><br/>Theme by <a href="https://twitter.com/michigangraham">mattgraham</a><br/>Tweaked by waddlesplash</small></p>
       </footer>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
+
   </body>
 </html>
